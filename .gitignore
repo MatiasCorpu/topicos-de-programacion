@@ -1,0 +1,38 @@
+# Ignorar carpetas de proyectos que no deben subirse
+tp/
+
+# Ignorar archivo de pruebas
+pruebas.c
+
+# Ignorar carpetas de compilación y binarios
+bin/
+obj/
+*.o
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Ignorar archivos generados por CodeBlocks (opcional)
+*.depend
+*.layout
+*.cbp
+
+# Ignorar librerías estáticas compiladas
+*.a
+*.lib
+
+# Ignorar archivos de configuración de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos temporales
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Ignorar carpetas ocultas de sistemas operativos
+.cache/
+.idea/
+.vscode/
