@@ -3,6 +3,7 @@ tp/
 
 # Ignorar archivo de pruebas
 pruebas.c
+tempCodeRunnerFile.c
 
 # Ignorar carpetas de compilación y binarios
 bin/
