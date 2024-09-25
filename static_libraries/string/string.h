@@ -31,12 +31,11 @@ char *mstrchr(const char *s, int c);
 char *mstrrchr(char *s, int c);
 int mstrCmp(const char *s1, const char *s2);
 int mstrnCmp(const char *s1, const char *s2, size_t n);
-char *mstrStr(const char *haystack, const char *needle); //************ hacer y ojo con esta funcion loca
+char *mstrStr(const char *haystack, const char *needle); //************ falta y ojo con esta funcion loca
 
 bool isPalindrome(const char *s);
 int stringToInt(const char *s);
-char *readAndStoreStringParis(); //************ hacer y ojo con esta funcion loca
-int searchPosition(const char *string, const char c);// optimizar para no necesitar esta funcion en la desobfuscacion
+int countWordsOccurences(const char *string, const char *word);
 
 void createWordSequence(WordSequence *wordSeq, char *string);
 bool readWord(WordSequence *wordSeq, Word *word);
@@ -47,9 +46,11 @@ bool endOfWordSequence(const WordSequence *wordSeq);
 void repositionCursor(WordSequence *wordSeq, int displacement);
 void closeWordSequence(WordSequence *wordSeq);
 void deobfuscateWord(Word *word, const char *key);
-
 char *normalize(const char *stringToNormalize, char *normalizedString);
+
+int searchPosition(const char *string, const char c); // optimizar para no necesitar esta funcion en la desobfuscacion
 char *obfuscateStringWithShift(const char *obfuscated, char *deobfuscated, const char *key);
-int countWordsOccurences(const char *string, const char *word); //falta
+
+char *readAndStoreStringParis(); //************ falta y ojo con esta funcion loca
 
 #endif // STRING_H_INCLUDED

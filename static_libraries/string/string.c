@@ -276,10 +276,6 @@ char *normalize(const char *stringToNormalize, char *normalizedString)
     return normalizedString;
 }
 
-// Nj qemh v ljs kraenkqbres; lj oqe qemh es oqevorme sgn ellhs --Istqt Asdmgj
-// co tjoo a uoc ogdoqadotbq uo quk tjoo ib qukdakvv aik ivaog obaac bbiqov
-// abcdghijkoqtuv
-
 int searchPosition(const char *string, const char c)
 {
     int pos = 0;
@@ -339,5 +335,20 @@ char *obfuscateStringWithShift(const char *obfuscated, char *deobfuscated, const
 
 int countWordsOccurences(const char *string, const char *word)
 {
-    
+    int count = 0;
+
+    WordSequence readSeq;
+    createWordSequence(&readSeq, (char *)string);
+
+    Word wordRead;
+
+    readWord(&readSeq, &wordRead);
+    while (!endOfWordSequence(&readSeq))
+    {
+        if (mstrCmp(wordRead.word, word) == 0)
+            count++;
+        readWord(&readSeq, &wordRead);
+    }
+
+    return count;
 }
