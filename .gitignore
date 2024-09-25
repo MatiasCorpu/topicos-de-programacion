@@ -36,3 +36,6 @@ Thumbs.db
 .cache/
 .idea/
 .vscode/
+
+# Ignorar archivos de texto
+*.txt
