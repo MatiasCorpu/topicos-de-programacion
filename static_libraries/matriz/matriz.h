@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <stdbool.h>
 
 void **matrixCreate(int rows, int columns, size_t sizeElement);
@@ -20,8 +21,6 @@ bool isIdentityMatrix(const int **matrix, int n);
 bool isSymmetricMatrix(const int **matrix, int n);
 int **sumeMatrix(const int **matrix1, const int **matrix2, int rows, int columns);
 int **matrixProduct(const int **matrix1, const int **matrix2, int rows1, int columns1Rows2, int columns2);
-
-void **transposeMatrixInPlace(void **matrix, int n); // falta
-void **transposeMatrix(void **matrix, int n);        // falta
+void **transposeMatrix(const void **matrix, int rows, int columns, size_t sizeElement);
 
 #endif // MATRIZ_H_INCLUDED

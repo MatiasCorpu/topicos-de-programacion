@@ -160,3 +160,16 @@ int **matrixProduct(const int **matrix1, const int **matrix2, int rows1, int col
 
     return matrix;
 }
+
+void **transposeMatrix(const void **matrix, int rows, int columns, size_t sizeElement)
+{
+    void **mtTr = matrixCreate(columns, rows, sizeElement);
+    if (mtTr == NULL)
+        return NULL;
+
+    for (int i = 0; i < rows; i++)
+        for (int j = 0; j < columns; j++)
+            memcpy(mtTr[j] + i * sizeElement, matrix[i] + j * sizeElement, sizeElement);
+
+    return mtTr;
+}
