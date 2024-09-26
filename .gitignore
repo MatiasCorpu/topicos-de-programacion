@@ -1,6 +1,15 @@
 # Ignorar carpetas de proyectos que no deben subirse
 tp/
 
+# Excepción para la carpeta proyecto-juego-de-la-vida
+!proyecto-juego-de-la-vida/
+!proyecto-juego-de-la-vida/SDL2/
+!proyecto-juego-de-la-vida/SDL2/**
+!proyecto-juego-de-la-vida/SDL2.dll
+!proyecto-juego-de-la-vida/TP_Conway_template.cbp
+!proyecto-juego-de-la-vida/TP_Conway_template.depend
+!proyecto-juego-de-la-vida/TP_Conway_template.layout
+
 # Ignorar archivo de pruebas
 pruebas.c
 tempCodeRunnerFile.c
