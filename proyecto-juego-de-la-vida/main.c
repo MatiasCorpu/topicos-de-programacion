@@ -115,13 +115,14 @@ void dibujarMatrizEnElRenderer(int **matriz, int filas, int columnas, SDL_Render
     {
         for (int j = 0; j < columnas; j++)
         {
+            /*
             // posicion carteciana // es para dibujar cuadrados
             fillRect->x = offsetX + i * TAMANIO_CELDA;
             fillRect->y = offsetY + j * TAMANIO_CELDA;
             // tamaño del cuadrado
             fillRect->w = TAMANIO_CELDA;
             fillRect->h = TAMANIO_CELDA;
-
+            */
             if (matriz[i][j] == 1)
             {
                 SDL_SetRenderDrawColor(renderer, 0x80, 0xFF, 0x80, 0xFF);
