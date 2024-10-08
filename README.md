@@ -10,12 +10,12 @@ Este proyecto contiene una colección de documentos y un proyecto específico ti
 
 ## Índice
 
-1. [Documentos](#documents)
+1. [Documentos](#documentos)
 2. [Proyecto Juego de la Vida](#proyecto-juego-de-la-vida)
-   1. [Descripción](#descripción)
+   1. [Descripción](#descripción-1)
    2. [Reglas del juego](#reglas-del-juego)
 3. [Bibliotecas Estáticas](#bibliotecas-estáticas)
-   1. [Descripción](#descripción-1)
+   1. [Descripción](#descripción-2)
    2. [array](#array)
    3. [mathematics](#mathematics)
    4. [matriz](#matriz)
@@ -45,7 +45,7 @@ El proyecto "Juego de la Vida" es una implementación del autómata celular prop
 1. Una celda muerta con exactamente 3 celdas vecinas vivas, se convierte en una celda viva.
 2. Una celda viva con 2 o 3 celdas vecinas vivas, sigue viva; en otro caso, muere.
 
-
+![Juego de la Vida](proyecto-juego-de-la-vida\Juego-de-la-vida.gif)
 
 ## Bibliotecas Estáticas
 
