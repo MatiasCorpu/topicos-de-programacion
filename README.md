@@ -45,7 +45,9 @@ El proyecto "Juego de la Vida" es una implementación del autómata celular prop
 1. Una celda muerta con exactamente 3 celdas vecinas vivas, se convierte en una celda viva.
 2. Una celda viva con 2 o 3 celdas vecinas vivas, sigue viva; en otro caso, muere.
 
-![Juego de la Vida](proyecto-juego-de-la-vida/Juego-de-la-vida.gif)
+<div align = "center">
+   <img src = "proyecto-juego-de-la-vida/Juego-de-la-vida.gif" alt= "Juego de la Vida">
+</div>
 
 ## Bibliotecas Estáticas
 
