@@ -7,6 +7,24 @@ Este repositorio contiene recursos y ejemplos de programación en C para el curs
 
 Este proyecto contiene una colección de documentos y un proyecto específico titulado "Juego de la Vida". El propósito es proporcionar recursos de aprendizaje y ejemplos prácticos en programación, matemáticas y manipulación de estructuras de datos en C. Incluye bibliotecas estáticas y ejemplos de funciones útiles para el desarrollo de aplicaciones.
 
+Temas abordados por la materia:
+* estructuras
+* punteros
+* manipulaicón de cadenas
+* manejo de matrices
+* manejo de archivos de texto
+* manejo de archivos binarios
+* memoria dinámica
+* funciones genéricas
+* punteros a funciones
+* algoritmos de ordenamiento
+* algoritmos de búsqueda
+* algoritmo de Merge
+* creacion de bibliotecas estaticas
+* manejo de errores
+* creacion de macros
+* TDA (Tipos de Datos Abstractos)
+* recursividad
 
 ## Índice
 
