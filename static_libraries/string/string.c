@@ -133,6 +133,22 @@ int mstrnCmp(const char *s1, const char *s2, size_t n)
                                     : 0;
 }
 
+void *mmemmove(void *dest, const void *src, size_t n, size_t sizeElem)
+{
+    void *temp = malloc(n * sizeElem);
+    if(temp == NULL)
+        return NULL;
+
+    for(int i = 0; i < n; i++)
+    {
+        memcpy(temp + (i * sizeElem), src + (i * sizeElem), sizeElem);
+    }
+
+    memcpy(dest, temp, sizeElem * n);
+
+    free(temp);
+}
+
 //............................................................
 
 bool isPalindrome(const char *s)

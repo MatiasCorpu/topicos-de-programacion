@@ -32,6 +32,8 @@ char *mstrrchr(char *s, int c);
 int mstrCmp(const char *s1, const char *s2);
 int mstrnCmp(const char *s1, const char *s2, size_t n);
 char *mstrStr(const char *haystack, const char *needle); //************ falta y ojo con esta funcion loca
+void *mmemmove(void *dest, const void *src, size_t n, size_t sizeElem);
+
 
 bool isPalindrome(const char *s);
 int stringToInt(const char *s);
