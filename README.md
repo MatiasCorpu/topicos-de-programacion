@@ -64,6 +64,16 @@ Las bibliotecas estáticas son archivos compilados que contienen funciones y dat
 *  arrayRemoveAllOccurrences : Elimina todas las ocurrencias de un elemento en un arreglo.
 * shiftLeftOverwrite : Desplaza los elementos de un arreglo hacia la izquierda, sobreescribiendo el primer elemento.
 * shiftRightWithInsert : Desplaza los elementos de un arreglo hacia la derecha, insertando un nuevo elemento en la primera posición.
+* averageOfPairs : Calcula el promedio de los pares de elementos de un arreglo.
+* arrayPrintReverse : Muestra un arreglo en orden inverso.
+* sumOfAllElements : Calcula la suma de todos los elementos de un arreglo.
+* searchMin : Busca el elemento mínimo en un arreglo.
+* searchElement : Busca un elemento en un arreglo.
+* binarySearch : Busca un elemento en un arreglo ordenado utilizando búsqueda binaria.
+* sortInsertion : Ordena un arreglo utilizando el método de inserción.
+* sortSelection : Ordena un arreglo utilizando el método de selección.
+* swap : Intercambia dos elementos de un arreglo.
+
 
 ### mathematics
 
@@ -113,6 +123,7 @@ Las bibliotecas estáticas son archivos compilados que contienen funciones y dat
 * mstrCmp : Compara dos cadenas.
 * mstrnCmp : Compara los primeros n caracteres de dos cadenas.
 * mstrStr : Busca la primera ocurrencia de una subcadena en una cadena.
+* mmemmove : Copia una cadena en otra, manejando posibles solapamientos.
 * isPalindrome : Verifica si una cadena es un palíndromo.
 * stringToInt : Convierte una cadena en un número entero.
 * countWordsOccurences : Cuenta las ocurrencias de una palabra en una cadena.
