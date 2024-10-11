@@ -29,18 +29,21 @@ Temas abordados por la materia:
 ## Índice
 
 1. [Documentos](#documentos)
-2. [Proyecto Juego de la Vida](#proyecto-juego-de-la-vida)
+2. [Modelos de Parcial](#modelos-de-parcial)
+   1. [sensores-temperatura](#sensores-temperatura)
+
+3. [Proyecto Juego de la Vida](#proyecto-juego-de-la-vida)
    1. [Descripción](#descripción-1)
    2. [Reglas del juego](#reglas-del-juego)
-3. [Bibliotecas Estáticas](#bibliotecas-estáticas)
+4. [Bibliotecas Estáticas](#bibliotecas-estáticas)
    1. [Descripción](#descripción-2)
    2. [array](#array)
    3. [mathematics](#mathematics)
    4. [matriz](#matriz)
    5. [string](#string)
-4. [Instalación](#instalación)
-5. [Contribución](#contribución)
-6. [Licencia](#licencia)
+5. [Instalación](#instalación)
+6. [Contribución](#contribución)
+7. [Licencia](#licencia)
 
 
 ## Documentos
@@ -50,7 +53,9 @@ Temas abordados por la materia:
 *  **Topicos-de-Programacion-(3635)---Ejercicios-propuestos---V2.pdf** : Ejercicios propuestos para la materia.
 *  **codigo-ascci.pdf** : Tabla de codigos ASCII.
 
-
+## Modelos de Parcial
+### sensores-temperatura
+Solución en C para procesar un archivo de sensores, calculando el promedio de temperaturas solo de sensores en estado 'READY' y desestimando otros estados.
 
 ## Proyecto Juego de la Vida
 
