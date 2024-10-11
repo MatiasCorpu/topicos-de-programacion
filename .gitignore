@@ -49,3 +49,7 @@ Thumbs.db
 !proyecto-juego-de-la-vida/TP_Conway_template.cbp
 !proyecto-juego-de-la-vida/TP_Conway_template.depend
 !proyecto-juego-de-la-vida/TP_Conway_template.layout
+
+# Excepción para la carpeta modelos-de-parcial
+!modelos-de-parcial/sensores-temperatura/*.txt
+!modelos-de-parcial/sensores-temperatura/*.cbp
