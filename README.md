@@ -38,9 +38,10 @@ Temas abordados por la materia:
 4. [Bibliotecas Estáticas](#bibliotecas-estáticas)
    1. [Descripción](#descripción-2)
    2. [array](#array)
-   3. [mathematics](#mathematics)
-   4. [matriz](#matriz)
-   5. [string](#string)
+   3. [macros](#macros)
+   4. [mathematics](#mathematics)
+   5. [matriz](#matriz)
+   6. [string](#string)
 5. [Instalación](#instalación)
 6. [Contribución](#contribución)
 7. [Licencia](#licencia)
@@ -96,6 +97,24 @@ Las bibliotecas estáticas son archivos compilados que contienen funciones y dat
 * sortInsertion : Ordena un arreglo utilizando el método de inserción.
 * sortSelection : Ordena un arreglo utilizando el método de selección.
 * swap : Intercambia dos elementos de un arreglo.
+
+### macros
+* ROUND : Redondea un número al entero más cercano.
+* ABSOLUTE_VALUE : Calcula el valor absoluto de un número.
+* INTEGER_PART : Obtiene la parte entera de un número.
+* DECIMAL_PART : Obtiene la parte decimal de un número.
+* IS_EVEN : Verifica si un número es par.
+* IS_LETTER : Verifica si un carácter es una letra.
+* IS_DIGIT : Verifica si un carácter es un dígito.
+* IS_UPPERCASE : Verifica si un carácter es una letra mayúscula.
+* IS_LOWERCASE : Verifica si un carácter es una letra minúscula.
+* IS_WHITESPACE : Verifica si un carácter es un espacio en blanco.
+* TO_UPPERCASE : Convierte un carácter a mayúsculas.
+* TO_LOWERCASE : Convierte un carácter a minúsculas.
+* MIN : Calcula el mínimo entre dos números.
+* MAX : Calcula el máximo entre dos números.
+* IS_POWER_OF : Verifica si un número es una potencia de otro.
+* SWAP_VALUES : Intercambia dos valores.
 
 
 ### mathematics
