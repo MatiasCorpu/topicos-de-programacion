@@ -1,10 +1,6 @@
 #ifndef MACROS_H_INCLUDED
 #define MACROS_H_INCLUDED
 
-// mensaje para poner en el commit de la libreria macros, en ingles
-// "I added macros for mathematical and character operations"
-// "Agrego macros para operaciones matematicas y de caracteres"
-
 #include <stdio.h>
 #include <stdlib.h>
 
