@@ -42,9 +42,13 @@ Temas abordados por la materia:
    4. [mathematics](#mathematics)
    5. [matriz](#matriz)
    6. [string](#string)
-5. [Instalación](#instalación)
-6. [Contribución](#contribución)
-7. [Licencia](#licencia)
+
+5. [TDA](#tda)
+   1. [TDA-date](#tda-date)
+
+6. [Instalación](#instalación)
+7. [Contribución](#contribución)
+8. [Licencia](#licencia)
 
 
 ## Documentos
@@ -172,6 +176,24 @@ Las bibliotecas estáticas son archivos compilados que contienen funciones y dat
 * normalize : Normaliza una cadena.
 * searchPosition : Busca la posición de un carácter en una cadena.
 * obfuscateStringWithShift : Ofusca una cadena utilizando un desplazamiento de caracteres.
+
+## TDA
+TDA (Tipos de Datos Abstractos) es una estructura de datos que define un conjunto de operaciones y propiedades que pueden ser aplicadas a un conjunto de valores.
+
+
+### TDA-date
+* day : Obtiene el día de una fecha.
+* month : Obtiene el mes de una fecha.
+* year : Obtiene el año de una fecha.
+* daysInMonth : Calcula la cantidad de días en un mes de un año dado.
+* isLeapYear : Verifica si un año es bisiesto.
+* isDateValid : Verifica si una fecha es válida.
+* nextDay : Calcula el día siguiente a una fecha dada.
+* previousDay : Calcula el día anterior a una fecha dada.
+* addDays : Agrega una cantidad de días a una fecha dada.
+* subtractDays : Resta una cantidad de días a una fecha dada.
+* daysBetweenDates : Calcula la cantidad de días entre dos fechas.
+* dayOfWeek : Calcula el día de la semana de una fecha dada.
 
 
 
