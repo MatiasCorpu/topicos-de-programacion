@@ -45,6 +45,7 @@ Temas abordados por la materia:
 
 5. [TDA](#tda)
    1. [TDA-date](#tda-date)
+   2. [TDA-vector](#tda-vector)
 
 6. [Instalación](#instalación)
 7. [Contribución](#contribución)
@@ -180,8 +181,17 @@ Las bibliotecas estáticas son archivos compilados que contienen funciones y dat
 ## TDA
 TDA (Tipos de Datos Abstractos) es una estructura de datos que define un conjunto de operaciones y propiedades que pueden ser aplicadas a un conjunto de valores.
 
-
 ### TDA-date
+
+```c	
+typedef struct
+{
+    int day;
+    int month;
+    int year;
+} Date;
+```
+
 * day : Obtiene el día de una fecha.
 * month : Obtiene el mes de una fecha.
 * year : Obtiene el año de una fecha.
@@ -194,6 +204,42 @@ TDA (Tipos de Datos Abstractos) es una estructura de datos que define un conjunt
 * subtractDays : Resta una cantidad de días a una fecha dada.
 * daysBetweenDates : Calcula la cantidad de días entre dos fechas.
 * dayOfWeek : Calcula el día de la semana de una fecha dada.
+
+
+### TDA-vector
+
+```c
+typedef struct
+{
+    void *array;
+    int size;
+    size_t sizeElement;
+    int capacity;
+} Vector;
+```
+
+* vectorCreate : Crea un vector.
+* vectorResize : Redimensiona un vector.
+* vectorDestroy : Libera la memoria de un vector.
+* vectorIsFull : Verifica si un vector está lleno.
+* vectorIsEmpty : Verifica si un vector está vacío.
+* vectorInsertOrdered : Inserta un elemento en un vector ordenado.
+* vectorUnshift : Inserta un elemento al inicio de un vector.
+* vectorInsertAtPosition : Inserta un elemento en una posición específica de un vector.
+* vectorPush : Inserta un elemento al final de un vector.
+* vectorShift : Elimina un elemento al inicio de un vector.
+* vectorDeleteAtPosition : Elimina un elemento en una posición específica de un vector.
+* vectorDeleteElement : Elimina la primera ocurrencia de un elemento en un vector.
+* vectorDeleteElementAll : Elimina todas las ocurrencias de un elemento en un vector.
+* vectorClear : Elimina todos los elementos de un vector.
+* vectorPop : Elimina un elemento al final de un vector.
+* vectorSortInsertion : Ordena un vector utilizando el método de inserción.
+* vectorSortSelection : Ordena un vector utilizando el método de selección.
+* vectorMax : Obtiene el elemento máximo de un vector.
+* vectorMin : Obtiene el elemento mínimo de un vector.
+* vectorSearch : Busca un elemento en un vector.
+* vectorBinarySearch : Busca un elemento en un vector ordenado utilizando búsqueda binaria.
+* vectorSwap : Intercambia dos elementos de un vector.
 
 
 
