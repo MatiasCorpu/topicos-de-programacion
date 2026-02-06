@@ -109,7 +109,6 @@ void arrayPrint(void *arr, int ce, size_t sizeElem, Show show)
         show(i);
 }
 
-//-----------------------------------------------
 double averageOfPairs(void *arr, int ce, size_t sizeElem)
 {
     double r = 0.0;
@@ -229,7 +228,6 @@ void sortSelection(void *arr, int ce, size_t sizeElem, Compare cmp)
     }
 }
 
-// esto no tendria que ir no es parte de la libreria array:
 int cmpInst(const void *x, const void *y)
 {
     return *(int *)x - *(int *)y;

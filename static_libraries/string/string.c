@@ -1,5 +1,6 @@
 #include "string.h"
 
+// my string library functions -------------------------------------------------------------------- //
 int mstrLength(const char *s)
 {
     int length = 0;
@@ -136,10 +137,10 @@ int mstrnCmp(const char *s1, const char *s2, size_t n)
 void *mmemmove(void *dest, const void *src, size_t n, size_t sizeElem)
 {
     void *temp = malloc(n * sizeElem);
-    if(temp == NULL)
+    if (temp == NULL)
         return NULL;
 
-    for(int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)
     {
         memcpy(temp + (i * sizeElem), src + (i * sizeElem), sizeElem);
     }
@@ -149,47 +150,7 @@ void *mmemmove(void *dest, const void *src, size_t n, size_t sizeElem)
     free(temp);
 }
 
-//............................................................
-
-bool isPalindrome(const char *s)
-{
-    const char *left = s;
-    const char *right = s + mstrLength(s) - 1;
-
-    while (left < right)
-    {
-        while (left < right && !IS_LETTER(*left))
-            left++;
-
-        while (left < right && !IS_LETTER(*right))
-            right--;
-
-        if (TOLOWER(*left) != TOLOWER(*right))
-            return false;
-
-        left++;
-        right--;
-    }
-
-    return true;
-}
-
-int stringToInt(const char *s)
-{
-    int result = 0;
-    int multiplier = 1;
-    const char *last = s + mstrLength(s) - 1;
-
-    while (s <= last)
-    {
-        result += (*last - '0') * multiplier;
-        multiplier *= 10;
-        last--;
-    }
-    return result;
-}
-
-//............................................................
+// functions to normalize a string ---------------------------------------------------------------- //
 void createWordSequence(WordSequence *wordSeq, char *string)
 {
     wordSeq->cursor = string;
@@ -292,6 +253,7 @@ char *normalize(const char *stringToNormalize, char *normalizedString)
     return normalizedString;
 }
 
+// functions to obfuscate and deobfuscate a string ------------------------------------------------ //
 int searchPosition(const char *string, const char c)
 {
     int pos = 0;
@@ -347,6 +309,45 @@ char *obfuscateStringWithShift(const char *obfuscated, char *deobfuscated, const
     closeWordSequence(&writeSeq);
 
     return deobfuscated;
+}
+
+// other functions -------------------------------------------------------------------------------- //
+bool isPalindrome(const char *s)
+{
+    const char *left = s;
+    const char *right = s + mstrLength(s) - 1;
+
+    while (left < right)
+    {
+        while (left < right && !IS_LETTER(*left))
+            left++;
+
+        while (left < right && !IS_LETTER(*right))
+            right--;
+
+        if (TOLOWER(*left) != TOLOWER(*right))
+            return false;
+
+        left++;
+        right--;
+    }
+
+    return true;
+}
+
+int stringToInt(const char *s)
+{
+    int result = 0;
+    int multiplier = 1;
+    const char *last = s + mstrLength(s) - 1;
+
+    while (s <= last)
+    {
+        result += (*last - '0') * multiplier;
+        multiplier *= 10;
+        last--;
+    }
+    return result;
 }
 
 int countWordsOccurences(const char *string, const char *word)

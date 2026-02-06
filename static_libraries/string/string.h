@@ -22,6 +22,7 @@ typedef struct
     char word[WORD_SIZE];
 } Word;
 
+// my string library functions
 int mstrLength(const char *s);
 char *mstrCat(char *s1, const char *s2);
 char *mstrnCat(char *s1, const char *s2, size_t n);
@@ -31,14 +32,9 @@ char *mstrchr(const char *s, int c);
 char *mstrrchr(char *s, int c);
 int mstrCmp(const char *s1, const char *s2);
 int mstrnCmp(const char *s1, const char *s2, size_t n);
-char *mstrStr(const char *haystack, const char *needle); //************ falta y ojo con esta funcion loca
 void *mmemmove(void *dest, const void *src, size_t n, size_t sizeElem);
 
-
-bool isPalindrome(const char *s);
-int stringToInt(const char *s);
-int countWordsOccurences(const char *string, const char *word);
-
+// functions to normalize a string
 void createWordSequence(WordSequence *wordSeq, char *string);
 bool readWord(WordSequence *wordSeq, Word *word);
 void writeWord(WordSequence *wordSeq, const Word *word);
@@ -47,12 +43,16 @@ void capitalizeWord(Word *word);
 bool endOfWordSequence(const WordSequence *wordSeq);
 void repositionCursor(WordSequence *wordSeq, int displacement);
 void closeWordSequence(WordSequence *wordSeq);
-void deobfuscateWord(Word *word, const char *key);
 char *normalize(const char *stringToNormalize, char *normalizedString);
 
-int searchPosition(const char *string, const char c); // optimizar para no necesitar esta funcion en la desobfuscacion
+// functions to obfuscate and deobfuscate a string
+int searchPosition(const char *string, const char c);
+void deobfuscateWord(Word *word, const char *key);
 char *obfuscateStringWithShift(const char *obfuscated, char *deobfuscated, const char *key);
 
-char *readAndStoreStringParis(); //************ falta y ojo con esta funcion loca
+// other functions
+bool isPalindrome(const char *s);
+int stringToInt(const char *s);
+int countWordsOccurences(const char *string, const char *word);
 
 #endif // STRING_H_INCLUDED

@@ -13,8 +13,6 @@
 typedef int (*Compare)(const void *, const void *);
 typedef void (*Show)(void *);
 
-// typedef void (*Action)(void *, void *); // hacer que esta abarque todas las funciones y sacar Compare
-
 void showInt(void *x);
 int cmpInst(const void *x, const void *y);
 
@@ -26,9 +24,6 @@ int arrayInsertInSortedOrder(void *arr, int *ce, size_t sizeElem, int cap, void 
 void arrayRemoveElementAtPosition(void *arr, int *ce, size_t sizeElem, int pos);
 void arrayRemoveFirstOccurrence(void *arr, int *ce, size_t sizeElem, void *elem, Compare cmp);
 void arrayRemoveAllOccurrences(void *arr, int *ce, size_t sizeElem, void *elem, Compare cmp);
-
-//void arrayForEach(void *arr, int ce, size_t sizeElem, Action action, void *dataAction); // hacer que esta abarque todas las funciones y sacar Compare
-
 double averageOfPairs(void *arr, int ce, size_t sizeElem);
 void arrayPrintReverse(void *arr, int ce, size_t sizeElem, Show show);
 void sumOfAllElements(void *arr, int ce, size_t sizeElem, void *sum);

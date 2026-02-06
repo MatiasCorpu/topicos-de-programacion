@@ -10,7 +10,7 @@ float ex(int x, float tol);
 int absolute(int x);
 float squareRoot(float x, float tol);
 bool isFibonacci(int n);
-float seno(float x, float tol);
+float sine(float x, float tol);
 bool isPerfectNumber(int n);
 bool isDeficientNumber(int n);
 bool isAbundantNumber(int n);

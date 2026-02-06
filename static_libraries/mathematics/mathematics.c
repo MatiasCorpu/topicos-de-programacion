@@ -74,7 +74,7 @@ bool isFibonacci(int n)
     return term2 == n;
 }
 
-float seno(float x, float tol)
+float sine(float x, float tol)
 {
     float result = x;
     float term = x;
