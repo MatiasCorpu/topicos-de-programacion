@@ -48,13 +48,12 @@ int absolute(int x)
 
 float squareRoot(float x, float tol)
 {
-    float result = x;
-    float term = x;
-
-    while (term > tol)
+    float result = x / 2;
+    float difference = result * result - x;
+    while (difference > tol || difference < -tol)
     {
-        term = (term + (x / result - result)) / 2;
-        result += term;
+        result = (result + x / result) / 2;
+        difference = result * result - x;
     }
 
     return result;
@@ -80,11 +79,11 @@ float seno(float x, float tol)
     float result = x;
     float term = x;
     int i = 1;
-    while (term > tol)
+    while (term > tol || term < -tol)
     {
-        term = term * x * x / (2 * i * (2 * i + 1));
+        term = -term * x * x / ((i + 1) * (i + 2));
         result += term;
-        i++;
+        i += 2;
     }
     return result;
 }

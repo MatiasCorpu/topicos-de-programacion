@@ -8,9 +8,9 @@ int factorial(int n);
 int binomialCoefficient(int n, int k);
 float ex(int x, float tol);
 int absolute(int x);
-float squareRoot(float x, float tol); //<-- This function is not working properly
+float squareRoot(float x, float tol);
 bool isFibonacci(int n);
-float seno(float x, float tol); //<-- This function is not working properly
+float seno(float x, float tol);
 bool isPerfectNumber(int n);
 bool isDeficientNumber(int n);
 bool isAbundantNumber(int n);
@@ -18,6 +18,5 @@ int multiplyByAddition(int a, int b);
 int divideAndRemainder(int a, int b, int *remainder);
 int sumEvenNumbersLessThanN(int n);
 int isPrimeNumber(int n);
-
 
 #endif // MATHEMATICS_H_INCLUDED
