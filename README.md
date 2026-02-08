@@ -216,23 +216,16 @@ typedef struct
 
 <br/>
 <br/>
+<br/>
 
 ## Contribución
-
 Este es un repositorio de carácter personal y académico para la materia **Tópicos de Programación** de la **Universidad Nacional de La Matanza**. Por este motivo, no se aceptan contribuciones externas ni Pull Requests.
 
-
-<br/>
-
 ## Licencia
-
 Este proyecto se distribuye únicamente con fines educativos. <br/>
-Todos los derechos reservados © 2024 Matias Corpu.
-
-<br/>
+Todos los derechos reservados © 2026 Matias Corpu.
 
 ## Contacto
-
 Para cualquier pregunta o sugerencia, puedes contactar a:
 
 *   **Nombre del autor**: Matías Corpu
