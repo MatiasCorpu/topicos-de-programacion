@@ -4,6 +4,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#define TOLOWER(c) (c >= 'A' && c <= 'Z' ? c + 32 : c)
+#define TOUPPER(c) (c >= 'a' && c <= 'z' ? c - 32 : c)
+
 #define ROUND(x) (x - (int)x >= 0.5 ? (int)x + 1 : (int)x)
 #define ABSOLUTE_VALUE(x) (x > 0 ? x : x * (-1))
 #define INTEGER_PART(x) (int)x

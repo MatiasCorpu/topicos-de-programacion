@@ -1,90 +1,42 @@
 # Topicos de Programación
 
-Este repositorio contiene recursos y ejemplos de programación en C para el curso de Tópicos de Programación de la Universidad Nacional de La Matanza.
+Este repositorio centraliza las prácticas, algoritmos y soluciones desarrolladas durante la cursada de Tópicos de Programación en la UNLaM. Contiene la implementación de bibliotecas genéricas y estructuras de datos robustas, aplicando los conceptos avanzados del lenguaje C aprendidos en la materia.
 
+## Conocimientos y Temáticas Abordadas:
+* Gestión de Memoria: Punteros (simples y dobles), memoria dinámica y aritmética de punteros.
+* Programación Genérica: Funciones con void *, punteros a funciones y desarrollo de bibliotecas estáticas.
+* Estructuras de Datos (TDA): Diseño de Tipos de Datos Abstractos y recursividad.
+* Manejo de Información: Manipulación de archivos (texto y binarios), cadenas y matrices.
+* Algoritmia: Algoritmos de ordenamiento (Selección, Inserción, Merge), búsqueda (secuencial y binaria) y manejo de errores.
+* Optimización: Creación de macros avanzadas y normalización de datos.
 
-## Descripción
-
-Este proyecto contiene una colección de documentos y un proyecto específico titulado "Juego de la Vida". El propósito es proporcionar recursos de aprendizaje y ejemplos prácticos en programación, matemáticas y manipulación de estructuras de datos en C. Incluye bibliotecas estáticas y ejemplos de funciones útiles para el desarrollo de aplicaciones.
-
-Temas abordados por la materia:
-* estructuras
-* punteros
-* manipulaicón de cadenas
-* manejo de matrices
-* manejo de archivos de texto
-* manejo de archivos binarios
-* memoria dinámica
-* funciones genéricas
-* punteros a funciones
-* algoritmos de ordenamiento
-* algoritmos de búsqueda
-* algoritmo de Merge
-* creacion de bibliotecas estaticas
-* manejo de errores
-* creacion de macros
-* TDA (Tipos de Datos Abstractos)
-* recursividad
 
 ## Índice
 
-1. [Documentos](#documentos)
-2. [Modelos de Parcial](#modelos-de-parcial)
-   1. [sensores-temperatura](#sensores-temperatura)
-
-3. [Proyecto Juego de la Vida](#proyecto-juego-de-la-vida)
-   1. [Descripción](#descripción-1)
-   2. [Reglas del juego](#reglas-del-juego)
-4. [Bibliotecas Estáticas](#bibliotecas-estáticas)
-   1. [Descripción](#descripción-2)
-   2. [array](#array)
-   3. [macros](#macros)
-   4. [mathematics](#mathematics)
-   5. [matriz](#matriz)
-   6. [string](#string)
-
-5. [TDA](#tda)
+1. [Bibliotecas](#bibliotecas)
+   1. [array](#array)
+   2. [macros](#macros)
+   3. [mathematics](#mathematics)
+   4. [matriz](#matriz)
+   5. [string](#string)
+2. [TDA](#tda)
    1. [TDA-date](#tda-date)
    2. [TDA-vector](#tda-vector)
+3. [Documentos](#documentos)
+4. [Contribución](#contribución)
+5. [Licencia](#licencia)
 
-6. [Instalación](#instalación)
-7. [Contribución](#contribución)
-8. [Licencia](#licencia)
 
+<br/>
 
-## Documentos
+## Bibliotecas
+El enfoque principal es la reutilización de código mediante:
 
-*  **01-AnciC.pdf** : librerias estandar de C y ejemplos de uso.
-*  **IntroduccionC.pdf** : Introduccion a la programacion en C.
-*  **Topicos-de-Programacion-(3635)---Ejercicios-propuestos---V2.pdf** : Ejercicios propuestos para la materia.
-*  **codigo-ascci.pdf** : Tabla de codigos ASCII.
+<b> Manejo de void * </b>: Funciones que operan con cualquier tipo de dato.<br/>
+<b> Aritmética de punteros y memoria </b>: Manipulación directa con memcpy y gestión dinámica.<br/>
+<b> Punteros a función </b>: Uso de callbacks para comparaciones personalizadas.
 
-## Modelos de Parcial
-### sensores-temperatura
-Solución en C para procesar un archivo de sensores, calculando el promedio de temperaturas solo de sensores en estado 'READY' y desestimando otros estados.
-
-## Proyecto Juego de la Vida
-
-### Descripción
-
-El proyecto "Juego de la Vida" es una implementación del autómata celular propuesto por John Conway en 1970. El juego consiste en una matriz bidimensional de celdas que pueden estar vivas o muertas. En cada iteración, las celdas cambian de estado según un conjunto de reglas simples .El proyecto incluye una implementación en C y una interfaz gráfica utilizando la biblioteca SDL2.
-
-### Reglas del juego
-
-1. Una celda muerta con exactamente 3 celdas vecinas vivas, se convierte en una celda viva.
-2. Una celda viva con 2 o 3 celdas vecinas vivas, sigue viva; en otro caso, muere.
-
-<div align = "center">
-   <img src = "proyecto-juego-de-la-vida/Juego-de-la-vida.gif" alt= "Juego de la Vida">
-</div>
-
-## Bibliotecas Estáticas
-
-### Descripción
-
-Las bibliotecas estáticas son archivos compilados que contienen funciones y datos que pueden ser utilizados por otros programas. En este proyecto, se incluyen bibliotecas estáticas con funciones útiles para el desarrollo de aplicaciones en C.
-
-### array
+### array 
 
 *  arrayInsertElementAtPosition : Inserta un elemento en una posición específica de un arreglo.
 *  arrayInsertInSortedOrder : Inserta un elemento en un arreglo ordenado.
@@ -94,6 +46,7 @@ Las bibliotecas estáticas son archivos compilados que contienen funciones y dat
 * shiftLeftOverwrite : Desplaza los elementos de un arreglo hacia la izquierda, sobreescribiendo el primer elemento.
 * shiftRightWithInsert : Desplaza los elementos de un arreglo hacia la derecha, insertando un nuevo elemento en la primera posición.
 * averageOfPairs : Calcula el promedio de los pares de elementos de un arreglo.
+* arrayPrint: Muestra un arreglo.
 * arrayPrintReverse : Muestra un arreglo en orden inverso.
 * sumOfAllElements : Calcula la suma de todos los elementos de un arreglo.
 * searchMin : Busca el elemento mínimo en un arreglo.
@@ -131,7 +84,7 @@ Las bibliotecas estáticas son archivos compilados que contienen funciones y dat
 *  absolute : Calcula el valor absoluto de un número.
 *  squareRoot : Calcula la raíz cuadrada de un número con una tolerancia dada.
 *  isFibonacci : Verifica si un número es un número de Fibonacci.
-*  seno : Calcula el seno de un ángulo en radianes con una tolerancia dada.
+*  sino : Calcula el seno de un ángulo en radianes con una tolerancia dada.
 *  isPerfectNumber : Verifica si un número es un número perfecto.
 *  isDeficientNumber : Verifica si un número es un número deficiente.
 *  isAbundantNumber : Verifica si un número es un número abundante.
@@ -177,6 +130,9 @@ Las bibliotecas estáticas son archivos compilados que contienen funciones y dat
 * normalize : Normaliza una cadena.
 * searchPosition : Busca la posición de un carácter en una cadena.
 * obfuscateStringWithShift : Ofusca una cadena utilizando un desplazamiento de caracteres.
+
+
+<br/>
 
 ## TDA
 TDA (Tipos de Datos Abstractos) es una estructura de datos que define un conjunto de operaciones y propiedades que pueden ser aplicadas a un conjunto de valores.
@@ -240,42 +196,46 @@ typedef struct
 * vectorSearch : Busca un elemento en un vector.
 * vectorBinarySearch : Busca un elemento en un vector ordenado utilizando búsqueda binaria.
 * vectorSwap : Intercambia dos elementos de un vector.
+* vectorGet : Obtiene un elemento en una posición específica de un vector.
+* vectorGetFirst : Obtiene el primer elemento de un vector.
+* vectorGetLast : Obtiene el último elemento de un vector.
+* vectorConcat : Concatena dos vectores.
+* vectorSet : Establece el valor de un elemento en una posición específica de un vector.
+* vectorReverse : Invierte el orden de los elementos de un vector.
 
 
+<br/>
 
-## Instalación
+## Documentos
 
-Para instalar y configurar el proyecto, sigue estos pasos:
-
-1. Clona el repositorio:
-   ```bash
-   git clone https://github.com/MatiasCorpu/topicos-de-programacion.git
-   ```
-
-2. Acegurate de tener instalado el compilador de C.
-   ```bash	
-   gcc --version
-   ```
+*  **01-AnciC.pdf** : librerias estandar de C y ejemplos de uso.
+*  **IntroduccionC.pdf** : Introduccion a la programacion en C.
+*  **Topicos-de-Programacion-(3635)---Ejercicios-propuestos---V2.pdf** : Ejercicios propuestos para la materia.
+*  **codigo-ascci.pdf** : Tabla de codigos ASCII.
 
 
+<br/>
+<br/>
 
 ## Contribución
 
-¡Las contribuciones no son aceptadas en este proyecto! Este repositorio es un proyecto personal para el curso de Tópicos de Programación de la Universidad Nacional de La Matanza.
+Este es un repositorio de carácter personal y académico para la materia **Tópicos de Programación** de la **Universidad Nacional de La Matanza**. Por este motivo, no se aceptan contribuciones externas ni Pull Requests.
 
 
+<br/>
 
 ## Licencia
 
-Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
+Este proyecto se distribuye únicamente con fines educativos. <br/>
+Todos los derechos reservados © 2024 Matias Corpu.
 
-
+<br/>
 
 ## Contacto
 
 Para cualquier pregunta o sugerencia, puedes contactar a:
 
-*   **Nombre del autor**: Matias Corpu
+*   **Nombre del autor**: Matías Corpu
 *   **Correo electrónico**: corpumatiasariel@gmail.com
 *   **Perfil de GitHub**: [MatiasCorpu](https://github.com/MatiasCorpu)
 

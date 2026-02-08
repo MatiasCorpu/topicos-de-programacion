@@ -260,3 +260,47 @@ void vectorSwap(Vector *v, int pos1, int pos2)
 
     free(tmp);
 }
+
+void *vectorGet(Vector *v, int pos)
+{
+    if (pos < 0 || pos >= v->size)
+        return NULL;
+
+    return v->array + pos * v->sizeElement;
+}
+
+void *vectorGetFirst(Vector *v)
+{
+    if (vectorIsEmpty(v))
+        return NULL;
+
+    return v->array;
+}
+
+void *vectorGetLast(Vector *v)
+{
+    if (vectorIsEmpty(v))
+        return NULL;
+
+    return v->array + (v->size - 1) * v->sizeElement;
+}
+
+void vectorConcat(Vector *v1, Vector *v2)
+{
+    for (int i = 0; i < v2->size; i++)
+        vectorPush(v1, v2->array + i * v2->sizeElement);
+}
+
+void vectorSet(Vector *v, void *data, int pos)
+{
+    if (pos < 0 || pos >= v->size)
+        return;
+
+    memcpy(v->array + pos * v->sizeElement, data, v->sizeElement);
+}
+
+void vectorReverse(Vector *v)
+{
+    for (int i = 0; i < v->size / 2; i++)
+        vectorSwap(v, i, v->size - 1 - i);
+}

@@ -14,7 +14,7 @@ obj/
 *.so
 *.dylib
 
-# Ignorar archivos generados por CodeBlocks (opcional)
+# Ignorar archivos generados por CodeBlocks
 *.depend
 *.layout
 *.cbp
@@ -40,16 +40,3 @@ Thumbs.db
 
 # Ignorar archivos de texto
 *.txt
-
-# Excepción para la carpeta proyecto-juego-de-la-vida
-!proyecto-juego-de-la-vida/
-!proyecto-juego-de-la-vida/SDL2/
-!proyecto-juego-de-la-vida/SDL2/**
-!proyecto-juego-de-la-vida/SDL2.dll
-!proyecto-juego-de-la-vida/TP_Conway_template.cbp
-!proyecto-juego-de-la-vida/TP_Conway_template.depend
-!proyecto-juego-de-la-vida/TP_Conway_template.layout
-
-# Excepción para la carpeta modelos-de-parcial
-!modelos-de-parcial/sensores-temperatura/*.txt
-!modelos-de-parcial/sensores-temperatura/*.cbp
